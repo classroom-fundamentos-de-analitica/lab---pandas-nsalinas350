@@ -86,8 +86,8 @@ def pregunta_05():
     E    9
     Name: _c2, dtype: int64
     """
-    promedio_por_letra = tbl0.groupby('_c1')['_c2'].mean()
-    return promedio_por_letra
+    maximo_por_letra = tbl0.groupby('_c1')['_c2'].max()
+    return maximo_por_letra
 
 
 def pregunta_06():
